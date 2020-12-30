@@ -1,0 +1,22 @@
+{
+  "name": "kennybot",
+  "version": "1.0.0",
+  "description": "This is a discord bot.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaazii/DiscordBot.git"
+  },
+  "author": "Kazi and Darwin featuring HONG YU WANG, HAN YU, KEVIN KANG, KENNY ZHENG, KAI WEN ZHENG, project manager DANY MOUTAFCHIEV, SALES ASSOCIATE EVEY MUSTARDCHEIF, DANYS DAD VLAD, and CHIEF EXECUTIVE OFFICER STANLEY LY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaazii/DiscordBot/issues"
+  },
+  "homepage": "https://github.com/kaazii/DiscordBot#readme",
+  "dependencies": { 
+    "discord.js": "^12.5.1"
+  }
+}
