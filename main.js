@@ -13,7 +13,7 @@ for (const file of commandFiles){
 }
     
 client.once('ready', () => {
-    console.log('KennyBot is online.    ')
+    console.log('KennyBot is online.')
 });
 
 client.on('message', message => {
