@@ -9,17 +9,14 @@ module.exports = {
        let role = cache.find(role => role.name.toLowerCase() === roleText);
        let kennyBotRole = cache.find(role => role.name === 'KennyBot');
 
-
-       console.log(kennyBotRole);
-
        if (cache){
            if (message.member.roles.cache.has(role.id)){
                 message.reply('You already have this role');
-           }
+           }    
            else if (role.rawPosition > kennyBotRole.rawPosition){
                message.reply('Role can not be added - insufficient permissions');
            }
-           else if (role) {
+           else {
                 message.member.roles.add(role);
                 message.reply('You have been added to ' + roleText);
            }
