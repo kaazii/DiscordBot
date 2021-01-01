@@ -2,6 +2,5 @@
 
 Functionality:
 
-TODO: !Roll
-
-None yet. Stay tuned.
+!join <role> - Join a role, as long as you have the permissions.
+!leave <role> - Leave a role, as long as you have the permissions.
