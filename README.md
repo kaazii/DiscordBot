@@ -11,7 +11,7 @@ Functionality:
 
 功能性：
 
-！join `<role>` - 加入角色，只要您具有权限。加
+!join `<role>` - 加入角色，只要您具有权限。加
 
 
-！leave `<role>` - 保留角色，只要您具有权限即可。
+!leave `<role>` - 保留角色，只要您具有权限即可。
