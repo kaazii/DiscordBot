@@ -2,8 +2,8 @@ module.exports = {
     name: 'leave',
     description: "leave a role",
     usage: `!leave <role>`,
+    cooldown: 3,
     execute(message, args) {
-
         let { cache } = message.guild.roles;
         let roleText = message.content.toLowerCase().trim().substring(7);
 
@@ -18,7 +18,7 @@ module.exports = {
         else if (role === undefined) {
             message.reply('That role does not exist.');
         }
-        if (role) {
+        else {
             if (!message.member.roles.cache.has(role.id)) {
                 message.reply('You do not have this role');
             }
@@ -27,7 +27,7 @@ module.exports = {
             }
             else {
                 message.member.roles.remove(role);
-                message.reply('You have been removed from ' + roleText);
+                message.reply(`You have been removed from ${roleText}.`);
             }
         }
     }

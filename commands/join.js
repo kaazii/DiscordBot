@@ -2,6 +2,7 @@ module.exports = {
     name: 'join',
     description: "join a role",
     usage: '!join <role>',
+    cooldown: 3,
     execute(message, args) {
 
         let { cache } = message.guild.roles;
@@ -18,16 +19,16 @@ module.exports = {
         else if (role === undefined) {
             message.reply('That role does not exist.');
         }
-        else if (cache) {
+        else {
             if (message.member.roles.cache.has(role.id)) {
-                message.reply('You already have this role');
+                message.reply('You already have this role.');
             }
             else if (role.rawPosition > kennyBotRole.rawPosition) {
-                message.reply('Role can not be added - insufficient permissions');
+                message.reply('Role can not be added - insufficient permissions.');
             }
             else {
                 message.member.roles.add(role);
-                message.reply('You have been added to ' + roleText);
+                message.reply(`You have been added to ${roleText}.`);
             }
         }
     }

@@ -16,7 +16,8 @@
     "url": "https://github.com/kaazii/DiscordBot/issues"
   },
   "homepage": "https://github.com/kaazii/DiscordBot#readme",
-  "dependencies": { 
+  "dependencies": {
+    "alphavantage": "^2.2.0",
     "discord.js": "^12.5.1"
   }
 }
