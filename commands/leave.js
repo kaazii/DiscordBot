@@ -1,7 +1,7 @@
 module.exports = {
     name: 'leave',
     description: "leave a role",
-    usage: `!leave <role>`,
+    usage: `<role>`,
     cooldown: 3,
     execute(message, args) {
         let { cache } = message.guild.roles;

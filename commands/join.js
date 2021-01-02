@@ -1,10 +1,9 @@
 module.exports = {
     name: 'join',
     description: "join a role",
-    usage: '!join <role>',
+    usage: '<role>',
     cooldown: 3,
     execute(message, args) {
-
         let { cache } = message.guild.roles;
         let roleText = message.content.toLowerCase().trim().substring(6);
 
