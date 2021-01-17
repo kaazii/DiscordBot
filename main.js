@@ -18,6 +18,11 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
+    // if (message.content.toLowerCase().split(" ").join("").includes("pog")) {
+    //     message.channel.bulkDelete(1);
+    //     message.reply('Stop using that disgusting word! Consider this a warning.');
+    // }
+
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/); // this is safer then (" ") - All commands are spliced, args is also an array

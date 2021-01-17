@@ -10,14 +10,14 @@ Functionality:
 
 !kill `[user]`   Bot will output a reference to the show.
 
-# 功能性：
 
-功能性：
-
-!join `<role>`  加入角色，只要您具有权限。加
+!avatar `[user]`    Posts a link to the user's avatar
 
 
-!leave `<role>`  保留角色，只要您具有权限即可。
+!clear `[number]`   Enter 1-100 to clear that many messages; clears 50 if no number specified
 
 
-!kill `[user]`
+!ping           Basic ping command
+
+
+!quote `<stock>`    Outputs data about the inputted stock 
