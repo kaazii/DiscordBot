@@ -18,10 +18,6 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-    // if (message.content.toLowerCase().split(" ").join("").includes("pog")) {
-    //     message.channel.bulkDelete(1);
-    //     message.reply('Stop using that disgusting word! Consider this a warning.');
-    // }
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
