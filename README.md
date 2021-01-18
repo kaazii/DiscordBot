@@ -21,3 +21,6 @@ Functionality:
 
 
 !quote `<stock>`    Outputs data about the inputted stock 
+
+
+This is a test commit.
